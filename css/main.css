@@ -1,0 +1,125 @@
+body {
+    background: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.header .logo {
+    color: #e04643;
+    font-size: 25px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+}
+
+.social {
+    font-size: 22px;
+    padding-top: 2px;
+
+}
+
+* {
+    color: #fff;
+    text-decoration: none;
+}
+
+.background {
+    background: url('../img/normal.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header div {
+        margin-bottom: 10px;
+    }
+    .background {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 321px) {}
+
+@media only screen and (max-width: 320px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header div {
+        margin-bottom: 10px;
+    }
+    .background {
+        background-size:cover;
+        height: 450px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {}
+
+@media only screen and (min-width: 1224px) {
+    .background {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    .background {
+        height: 800px;
+    }
+}
