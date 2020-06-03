@@ -1,42 +1,706 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
     <title>Nihal Patel</title>
-    <meta name="author" content="Nihal M Patel" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
-    <script src="js/main.js"></script>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-icon.png">
+
+
 </head>
 
-<body>
-    <nav class="header">
-        <div class="logo-container">
-            <a href="/">
-                <span class="logo">Nihal Patel</span>
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="images/logo-icon.png" alt="Homepage">
             </a>
         </div>
-        <div class="social">
-            <a href="https://github.com/nihalmpatel"><span class="socicon-github"></span></a>
-            <a href="https://www.linkedin.com/in/nihalpatel"><span class="socicon-linkedin"></span></a>
-            <a href="https://www.facebook.com/nihalmpatel"><span class="socicon-facebook"></span></a>
-            <a href="https://twitter.com/nihalmpatel"><span class="socicon-twitter"></span></a>
-            <a href="https://www.behance.net/nihalpatel"><span class="socicon-behance"></span></a>
-        </div>
-    </nav>
-    <section class="content">
-        <div class="background">
-            <h1>
-                <a href="" class="typewrite" data-period="1000" data-type='["#BlockChainConsultant", "#FullStackDeveloper", "#Ethereum", "#MEANStack" ]'>
-                    <span class="wrap"></span>
-                </a>
-            </h1>
-        </div>
-    </section>
-</body>
 
-</html>
+        <div class="header-content">
+
+            <nav class="row header-nav-wrap">
+                <ul class="header-nav">
+                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+                    <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
+                    <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
+                    <li><a href="#get-in-touch" title="Contact us">Say Hello</a></li>
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+
+            <a href="#0" class="btn btn--stroke btn--small">Hire Me</a>
+
+        </div> <!-- end header-content -->
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header>
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-3000.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="row hero-content">
+
+            <div class="column large-full">
+
+                <h1>
+                    Hello, I'm Nihal Patel, <br>
+                    a Full Stack Software Developer <br>
+                    & Blockchain Ninja. <br>
+                </h1>
+
+                <ul class="hero-social">
+                    <li>
+                        <a href="https://www.linkedin.com/in/nihalpatel" title="" target="_blank">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/nihalmpatel" title="" target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/nihalpatel" title="" target="_blank">Behance</a>
+                    </li>
+                </ul> <!-- end hero-social -->
+
+            </div>
+
+        </div> <!-- end hero-content -->
+
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-link smoothscroll">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 24l-8-9h6v-15h4v15h6z" /></svg>
+            </a>
+        </div> <!-- end hero-scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="s-about__section s-about__section--profile">
+
+            <div class="right-vert-line"></div>
+
+            <div class="row">
+                <div class="column large-6 medium-8 tab-full">
+
+                    <div class="section-intro" data-num="01" data-aos="fade-up">
+                        <h3 class="subhead">About Me</h3>
+                        <h1 class="display-1">I'm the kind of person who isn't afraid of challenges.</h1>
+                    </div>
+
+                    <div class="profile-pic" data-aos="fade-up">
+                        <img src="images/profile-pic.png" alt="">
+                    </div>
+
+                    <h3 data-aos="fade-up">Profile</h3>
+
+                    <p data-aos="fade-up">
+                        I'm a self-motivated, meticulous, professional Full-Stack Software Developer with 2+ years of
+                        experience in the
+                        software development process, having a vast array of knowledge in Full-Stack web development,
+                        decentralized Blockchain applications, cross-platform mobile and desktop application
+                        development.
+                    </p>
+
+                </div>
+            </div>
+
+        </div> <!-- end s-about__section--profile -->
+
+        <div class="s-about__section">
+
+            <div class="row">
+                <div class="column">
+                    <h3 data-aos="fade-up">Career</h3>
+                </div>
+            </div>
+
+            <div class="row block-large-1-2 block-900-full work-positions">
+
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Thusney Commerce Group Ltd.</span> <br />
+                                <span class="position__pos">Full Stack Software Developer (Remote)</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Toronto, CA | Aug 2018 - Present
+                            </div>
+                        </div>
+
+                        <!-- <p>
+                        Pellentesque posuere. Etiam rhoncus. Praesent blandit laoreet nibh. 
+                        Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, 
+                        eu sollicitudin urna dolor sagittis lacus. 
+                        </p> -->
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Fiverr</span> <br />
+                                <span class="position__pos">Freelance Blockchain Developer</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Jan 2018 - Present
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">MindDeft Technologies Pvt. Ltd.</span> <br />
+                                <span class="position__pos">Blockchain Intern</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Ahmedabad, IN | Jan 2018 - Apr 2018
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column" data-aos="fade-up">
+                    <div class="position">
+                        <div class="position__header">
+                            <h6>
+                                <span class="position__co">Jetbro</span> <br />
+                                <span class="position__pos">Front-End Summer Intern</span>
+                            </h6>
+                            <div class="position__timeframe">
+                                Ahmedabad, IN | June 2017
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+
+            </div> <!-- work positions -->
+
+        </div> <!-- end s-about__section -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+
+        <div class="row s-services__content">
+
+            <div class="vert-line"></div>
+
+            <div class="column large-6 s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead">Expertise</h3>
+
+                    <h1 class="display-1">
+                        I create software that scales.
+                    </h1>
+                </div>
+                <!-- 
+                <p class="lead" data-aos="fade-up">
+                    Suspendisse eu ligula. Duis arcu tortor, suscipit eget,
+                    imperdiet nec, imperdiet iaculis, ipsum. Nulla facilisi.
+                    Etiam rhoncus. Praesent blandit laoreet nibh.
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    Cras sagittis. Praesent egestas tristique nibh.
+                </p> -->
+            </div> <!-- end  s-services--leftcol -->
+
+            <div class="column large-6">
+                <ul class="services-list" data-aos="fade-up">
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Web Development</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Node.js</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Express.js</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent70"><span>70%</span></div>
+                                    <strong>PHP</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent70"><span>70%</span></div>
+                                    <strong>Django</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>HTML5</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent85"><span>85%</span></div>
+                                    <strong>CSS3</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent70"><span>70%</span></div>
+                                    <strong>JQuery</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Angular 2+</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Blockchain</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Solidity</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Web3.js</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>Private Ethereum Network</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent85"><span>85%</span></div>
+                                    <strong>IPFS</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent70"><span>70%</span></div>
+                                    <strong>Bitcore</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Cross-Platform (Mobile & Desktop)</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent95"><span>95%</span></div>
+                                    <strong>Ionic 4</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Capacitor</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Electron.js</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Programming Languages</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Python</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>Java</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>C</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>C#</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Database</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>MongoDB</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>MySQL, PostgresSQL</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>Redis</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent75"><span>75%</span></div>
+                                    <strong>Firestore</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>Cloud Deployment</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <ul class="skill-bars">
+                                <li>
+                                    <div class="progress percent90"><span>90%</span></div>
+                                    <strong>AWS (EC2, S3, RDS, Lambda, Redis)</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>GCP</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent75"><span>75%</span></div>
+                                    <strong>Heroku</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent80"><span>80%</span></div>
+                                    <strong>Digital Ocean</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent75"><span>75%</span></div>
+                                    <strong>Docker</strong>
+                                </li>
+                                <li>
+                                    <div class="progress percent75"><span>75%</span></div>
+                                    <strong>Nginx</strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> <!-- services-list__item -->
+                </ul> <!-- end services-list -->
+            </div>
+
+        </div> <!-- s-services__content -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Portfolio</h3>
+                    <h1 class="display-1">
+                        A selection of recent projects I have worked on.
+                    </h1>
+                </div>
+            </div>
+        </div> <!-- s-porfolio__header -->
+
+        <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/bi-connect.png"
+                            title="BI Global Connect" data-size="1050x700">
+                            <img src="images/portfolio/bi-connect.png" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Desktop & Mobile Apps</div>
+                        <h4 class="folio-item__title">BI Global Connect</h4>
+                    </div>
+                    <a href="https://biglobalbrokers.com/" title="Project Link" class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>BI Global Connect is the fast, safe, and easy way to invest and grow your wealth powered by
+                            Artificial Intelligence and one of the world’s leading trading platforms.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/ubit.PNG" title="uBit"
+                            data-size="1050x700">
+                            <img src="images/portfolio/ubit.PNG" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Web & Blockchain</div>
+                        <h4 class="folio-item__title">uBit</h4>
+                    </div>
+                    <a href="https://ubit.ca" title="Project Link" class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>A solution for people who want to trade cryptocurrency and socialize using a simple and
+                            secure platform with an intuitive design and great user experience</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/stroke-detection.png"
+                            Title="Stroke Detection" data-size="1050x700">
+                            <img src="images/portfolio/stroke-detection.png" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Mobile App</div>
+                        <h4 class="folio-item__title">Stroke Detection</h4>
+                    </div>
+                    <a href="https://github.com/nihalmpatel/stroke-recognition-mobile" title="Project Link"
+                        class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>An application that is able to input faces, process them and compare
+                            them to the facial features of stroke patients. If an image is found to contain facial
+                            features depicting the possibility of a stroke, or not, then, the system will output the
+                            message, which will convey the user about the possibility of having a stroke.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/voting-blockchain.png"
+                            title="Decentralized Voting System" data-size="1050x700">
+                            <img src="images/portfolio/voting-blockchain.png" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Blockchain</div>
+                        <h4 class="folio-item__title">Decentralized Voting System</h4>
+                    </div>
+                    <a href="https://gitlab.com/nihalmpatel/decentralized-voting" title="Project Link" class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem
+                            corrupti neque nisi.</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/campus-crowd.png" title="Campus Crowd"
+                            data-size="1050x700">
+                            <img src="images/portfolio/campus-crowd.png" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Web</div>
+                        <h4 class="folio-item__title">Campus Crowd</h4>
+                    </div>
+                    <a href="http://campuscrowd.herokuapp.com" title="Project Link" class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>Campus Crowd provides seamless, real-time communication and networking among
+                            campus students and teachers</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+            <div class="column" data-aos="fade-up">
+                <div class="folio-item">
+                    <div class="folio-item__thumb">
+                        <a class="folio-item__thumb-link" href="images/portfolio/artify.png" title="Artify"
+                            data-size="1050x700">
+                            <img src="images/portfolio/artify.png" alt="">
+                        </a>
+                    </div>
+                    <div class="folio-item__info">
+                        <div class="folio-item__cat">Web</div>
+                        <h4 class="folio-item__title">Artify</h4>
+                    </div>
+                    <a href="https://artifynode.herokuapp.com/" title="Project Link" class="folio-item__project-link">Project
+                        Link</a>
+                    <div class="folio-item__caption">
+                        <p>It is an article sharing web application consists of a rich WYSIWYG editor to format the article and share
+                            it to the network</p>
+                    </div>
+                </div>
+            </div> <!-- end column -->
+
+        </div> <!-- folio-list -->
+
+    </section> <!-- end portfolio -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer id="get-in-touch" class="s-footer h-dark-bg">
+
+        <div class="right-vert-line"></div>
+
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">Get In Touch</h3>
+
+                    <h1 class="display-1">
+                        Have a cool idea or a concept that really excite you?
+                        Let's turn that idea into reality. Shoot me a message.
+                    </h1>
+                </div>
+
+                <div class="footer-email-us">
+                    <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                </div>
+            </div>
+
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Email
+                        </h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:#0">hello@nihalpatel.com</a>
+                        </p>
+                    </div> <!-- end footer-contact-block -->
+                    <br>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">
+                            Social
+                        </h5>
+                        <ul class="footer-contact-block__list">
+                            <li>
+                                <a href="https://www.linkedin.com/in/nihalpatel" title="" target="_blank">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/nihalmpatel" title="" target="_blank">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/nihalpatel" title="" target="_blank">Behance</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end footer-contact-block -->
+                </div>
+            </div>
+        </div> <!-- end s-footer__main -->
+
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Nihal Patel 2020</span>
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 0l8 9h-6v15h-4v-15h-6z" /></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
+                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
+                        title="Share"></button> <button class="pswp__button pswp__button--fs"
+                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
+                        title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
