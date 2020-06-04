@@ -2496,6 +2496,12 @@ html.no-csstransitions .hero-content {
   padding-top: 3.6rem;
   padding-bottom: 3.2rem;
   border-top: 1px solid #b3c2c1;
+  display: flex;
+}
+
+.position__logo {
+  height: 8rem;
+  margin-right: 1rem;
 }
 
 .position__header {
@@ -2529,6 +2535,8 @@ html.no-csstransitions .hero-content {
   letter-spacing: .3rem;
   color: #7e7e7e;
 }
+
+.position
 
 /* ------------------------------------------------------------------- 
  * responsive:
