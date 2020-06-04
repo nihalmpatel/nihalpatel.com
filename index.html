@@ -43,6 +43,9 @@
         });
     </script>
 
+    <!-- Pageclip -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 
 </head>
 
@@ -700,13 +703,22 @@
                     <h3 class="subhead">Get In Touch</h3>
 
                     <h1 class="display-1">
-                        Have a cool idea or a concept that really excite you?
-                        Let's turn that idea into reality. Shoot me a message.
+                        Want to say Hello or Have a cool idea? Shoot me a message.
                     </h1>
-                </div>
+                    <form action="https://send.pageclip.co/d3I5ImXhyGlDQl5NOKWZ3bFIgGUFQVDT/contact" class="form-light pageclip-form" method="post">
+                        <div>
+                            <label for="name">Your name</label>
+                            <input class="h-full-width" type="text" placeholder="Name" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input class="h-full-width" type="email" placeholder="test@mailbox.com" id="email" name="email" required>
+                        </div>
+                        <label for="exampleMessage">Message</label>
+                        <textarea class="h-full-width" placeholder="Your message" id="message" name="message" required></textarea>
 
-                <div class="footer-email-us">
-                    <a href="mailto:#0" class="btn btn--primary h-full-width">Let's Talk</a>
+                        <input class="btn--primary h-full-width pageclip-form__submit" type="submit" value="Let's Talk">
+                    </form>
                 </div>
             </div>
 
